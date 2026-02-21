@@ -59,10 +59,11 @@
 
 
 typedef struct {
+    uint64_t base;
     uint64_t entry;
     uint64_t phdr_addr;
     uint16_t phnum;
-    uint64_t base;
+
 } elf_info_t;
 
 

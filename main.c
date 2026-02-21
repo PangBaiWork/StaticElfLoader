@@ -18,11 +18,10 @@ int main(int argc, char **argv)
      char *elf_path;
     if (argc < 2){
         usage(argv[0]);
-        elf_path = "./static_elf";
+        elf_path = "test/static_libc/vvvmmm";
+    }else{
+        elf_path = argv[1];
     }
-
-    elf_path = argv[1];
-    
 
 
     int target_argc = argc - 1;
